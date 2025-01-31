@@ -1,0 +1,114 @@
+<div id="header-nav">
+  <nav id="main-nav">
+    <% if (!Array.isArray(theme.menu)) { %>
+      <% for (let i in theme.menu) { %>
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon-taichi"></div>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a>
+        </span>
+      <% } %>
+    <% } else { %>
+      <% for (let item of theme.menu) { %>
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon <%= (item.icon === 'e62b' && theme.icon_font) || (item.icon === 'f6ad' && !theme.icon_font) || !item.icon ? 'rotate' : '' %>">
+            <%- item.icon ? `&#x${item.icon};` : (theme.icon_font ? '&#xe62b;' : '&#xf6ad;') %>
+          </div>
+          <a class="main-nav-link" href="<%- url_for(item.url) %>"><%= __(item.name) %></a>
+        </span>
+      <% } %>
+    <% } %>
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    <% if (theme.rss) { %>
+      <a id="nav-rss-link" class="nav-icon" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>" target="_blank"></a>
+    <% } %>
+    <% if (theme.algolia_search.enable) { %>
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="<%= __('search') %>"></a>
+    <% } %>
+    <% if (theme.generator_search.enable) { %>
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="<%= __('search') %>"></a>
+    <% } %>
+  </nav>
+</div>
+<header id="header">
+  <% if (post.cover && post.cover.startsWith("rgb")) { %>
+    <picture></picture>
+    <div style="position: absolute;top: 0;left: 0;width: 100%;height: 150%;z-index: -2;display: block;background: <%- post.cover %>;mask: linear-gradient(to top, transparent, #fff 50%);"></div>
+  <% } else if (post.cover) { %>
+    <picture></picture>
+    <img fetchpriority="high" src="<%- url_for(post.cover, {relative: false}) %>" alt="<%= post.title %>">
+  <% } else if (post.cover == false) { %>
+
+  <% } else { %>
+    <picture>
+      <% if (theme.banner_srcset.enable) { %>
+        <% for (let i of theme.banner_srcset.srcset) { %>
+          <source media="<%= i.media %>" srcset="<%- url_for(i.src, {relative: false}) %>">
+        <% } %>
+        <img fetchpriority="high" src="<%- url_for(theme.banner, {relative: false}) %>" alt="<%= post.title %>">
+      <% } %>
+    </picture>
+    <% if (theme.banner_srcset.enable) { %>
+      <img src="" alt="<%= post.title %>" style="visibility: hidden;">
+    <% } else { %>
+      <img fetchpriority="high" src="<%- url_for(theme.banner, {relative: false}) %>" alt="<%= post.title %>">
+    <% } %>
+  <% } %>
+  <div id="header-outer">
+    <div id="header-title">
+      <% if (post.type == '404') { %>
+        <a href="/" id="logo">
+          <h1 data-aos="<%= theme.animation.options.header.title %>"><%= __("not_found.title") %></h1>
+        </a>
+      <% } else { %>
+        <% let title;
+            if (is_archive()) {
+              title = __('archives');
+            } else if (is_category()) {
+              title = __('categories');
+            } else if (is_tag()) {
+              title = __('tags');
+            } else if (post.title) {
+              title = post.title;
+            } else {
+              title = config.title;
+            } %>
+        <% if (title) { %>
+          <a href="<%- url_for() %>" id="logo">
+            <h1 data-aos="<%= theme.animation.options.header.title %>"><%= title %></h1>
+          </a>
+        <% } %>
+      <% } %>
+      <% if (post.type == 404) { %>
+        <h2 id="subtitle-wrap" data-aos="<%= theme.animation.options.header.subTitle %>">
+          <a href="/" id="subtitle"><%= __("not_found.subtitle") %></a>
+        </h2>
+      <% } else { %>
+        <% let subtitle;
+            if (is_archive()) {
+              if (is_month()) {
+                subtitle = page.year + '/' + page.month;
+              } else if (is_year()) {
+                subtitle = page.year;
+              } else {
+                subtitle = null;
+              }
+            } else if (is_category()) {
+              subtitle = post.category;
+            } else if (is_tag()) {
+              subtitle = post.tag;
+            } else if (post.title) {
+              subtitle = null;
+            } else if (theme.subtitle || config.subtitle) {
+              subtitle = theme.subtitle || config.subtitle;
+            } %>
+        <h2 id="subtitle-wrap" data-aos="<%= theme.animation.options.header.subTitle %>">
+          <% if (subtitle) { %>
+            <a href="<%- url_for() %>" id="subtitle"><%= subtitle %></a>
+          <% } %>
+        </h2>
+      <% } %>
+    </div>
+  </div>
+</header>
