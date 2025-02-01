@@ -9,7 +9,7 @@ tags: git
 git init
 ```
 
-2.添加文件到暂存区
+2.添加文件到暂存区(更新从第二步开始)
 
 ```
 git add .
@@ -27,7 +27,7 @@ git commit -m "blog1"
 git branch -M main
 ```
 
-5.配置远程仓库
+5.配置远程仓库(如果仓库已存在，则使用更新URL命令)
 
 ```
 git remote add origin "https://github.com/jjjasd7764/blog2.git"
