@@ -30,13 +30,19 @@ git branch -M main
 5.配置远程仓库
 
 ```
-git remote add origin "仓库链接"
+git remote add origin "https://github.com/jjjasd7764/blog2.git"
 ```
 
 6.将本地仓库代码推送到远程的仓库当中
 
 ```
 git push -u origin main
+```
+
+克隆到仓库的命令
+
+```
+git clone 仓库链接
 ```
 
 更新仓库，新建仓库，复制新仓库链接得以更新
@@ -48,7 +54,7 @@ git push -u origin main
 * **修改 `origin` 远程仓库的 URL：**
 
 ```
-git remote set-url origin "仓库链接"
+git remote set-url origin "https://github.com/jjjasd7764/blog2.git"
 ```
 
 再次尝试推送

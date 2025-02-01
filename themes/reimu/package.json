@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/D-Sketon/hexo-theme-reimu/issues"
   },
-  "homepage": "https://github.com/D-Sketon/hexo-theme-reimu#readme"
+  "homepage": "https://github.com/D-Sketon/hexo-theme-reimu#readme",
+  "dependencies": {
+    "hexo-theme-reimu": "file:"
+  }
 }
