@@ -39,7 +39,21 @@ git remote add origin "https://github.com/jjjasd7764/blog2.git"
 git push -u origin main
 ```
 
-克隆到仓库的命令
+**更新现有的远程仓库 URL**：
+
+```
+git remote set-url origin "https://github.com/jjjasd7764/blog.git"
+```
+
+服务器操作，删除现有的 `blog` 目录再重新克隆
+
+```
+rm -rf blog
+```
+
+<pre class="code-block-wrapper"><div class="code-block-header"><br class="Apple-interchange-newline"/></div></pre>
+
+克隆仓库的命令
 
 ```
 git clone 仓库链接
