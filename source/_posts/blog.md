@@ -44,3 +44,9 @@ hexo server
 ```
 hexo server -p 4000
 ```
+
+保持在服务器上一直运行的命令
+
+```
+nohup hexo server > server.log 2>&1 &
+```
