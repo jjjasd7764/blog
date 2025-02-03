@@ -39,6 +39,12 @@ git remote add origin "https://github.com/jjjasd7764/blog2.git"
 git push -u origin main
 ```
 
+如果遇到ssl证书问题，可以使用命令临时进行关闭
+
+```
+git config --global http.sslVerify false
+```
+
 **更新现有的远程仓库 URL**：
 
 ```
