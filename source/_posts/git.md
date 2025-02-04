@@ -51,6 +51,13 @@ git config --global http.sslVerify false
 git remote set-url origin "https://github.com/jjjasd7764/blog.git"
 ```
 
+合并远程更新
+
+```
+git fetch origin
+git merge origin/main
+```
+
 服务器操作，删除现有的 `blog` 目录再重新克隆
 
 ```
