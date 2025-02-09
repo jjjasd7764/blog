@@ -7,19 +7,19 @@ comments: true
 
 ### 前后端网页购物平台开发
 
-熟悉掌握编写复杂的视图，能熟练编写自定义函数，能熟练使用JavaScript和Bootstrap，熟悉掌握Python web和 Android App开发，掌握各类编程工具和语言的环境部署。具有良好的编程习惯。
+熟悉掌握编写复杂的视图，精通编写自定义函数，能熟练使用JavaScript和Bootstrap，精通掌握Python web和 Android App开发，掌握各类编程工具的环境部署。具有良好的编程习惯。有过外卖小程序、点餐小程序、购物平台、博客、推荐电影系统、二手交易系统等的开发经验。熟悉掌握编写复杂的视图，能熟练编写自定义函数，能熟练使用JavaScript和Bootstrap，熟悉掌握Python web和 Android App开发，掌握各类编程工具和语言的环境部署。具有良好的编程习惯。
 
 ### **Al人工智能大模型部署训练微调以及应用**
 
-熟悉最新Al技术,包括大模型技术,计算机视觉,熟悉OpenAl和GitHub，有ChatGPT实操经验，并且在GitHub上发表过项目，熟悉OpenCV图形标注，识别和训练。
+熟悉最新Al技术,包括大模型技术,计算机视觉,熟悉OpenAl和GitHub，有过ChatGPT微调的实操经验，并且在GitHub上发表过项目，复现huggingface上的大语言模型，熟悉OpenCV图形标注，识别和训练。在本地部署过流行的大语言模型，如deepseek、ollama、qwen2等
 
 ### **农场种植农作物利润最大化**
 
-参加过完整的数据采集、清洗、整理、分析工作具有一年的数据分析经验，有数据产品设计经验，熟悉决策树、聚类、逻辑回归、关联分析、SVM，动态规划、时间序列等，熟悉SAS、SPSS，R和lingo分析软件。
+参加过完整的数据采集、清洗、整理、分析工作，具有一年的数据分析经验，精通python中pandas、[Matplotlib](https://www.heywhale.com/mw/project/677be433baedc637d3c0c1d5)、numpy等常用的数据分析包，有数据产品设计经验，熟悉决策树、聚类、逻辑回归、关联分析、SVM，动态规划、时间序列等，精通SAS、SPSS，R和lingo分析软件。参加过完整的数据采集、清洗、整理、分析工作具有一年的数据分析经验，有数据产品设计经验，熟悉决策树、聚类、逻辑回归、关联分析、SVM，动态规划、时间序列等，熟悉SAS、SPSS，R和lingo分析软件。
 
 ### 掌握的技术有
 
-MySQL、Python、Hadoop、python、java、MATLAB、SPSS、PS、办公软件、高等数学、R语音等等，精通springboot框架，flask框架，django框架。
+MySQL、Python、Hadoop、python、java、MATLAB、SPSS、PS、办公软件、高等数学、R等等，精通springboot框架，flask框架，django框架。
 
 ### 获得的荣誉
 
