@@ -25,6 +25,16 @@ comments: true
 
 精通独立式开发外卖小程序、客运预约系统、生鲜超市售卖商城小程序、飞行棋、俄罗斯方块、五子棋等微小项目部署在服务器上。
 
+### 搭建sealos服务器部署oneapi和fastgpt
+
+处理十万字知识库转化为markdown格式，优化大模型1~5秒之间进行回复，搭建仲广群名师智能体，时间规划小助手，在oneapi中对接api秘钥，对接的厂商有硅基流动，kimi，百度云帆，ai-xi，等。
+
+### 搭建过若依框架的python-vue3前后端系统
+
+### 精通搭建扣子对话流，扣子应用对接微信小程序，微信公众号，微信服务号。
+
+### 精通构建微信卡片，推广流量
+
 ### 主修课程
 
 MySQL、Python、Hadoop、python、java、MATLAB、SPSS、PS、办公软件、高等数学、R等等，精通springboot框架，flask框架，django框架。
